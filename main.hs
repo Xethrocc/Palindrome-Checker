@@ -35,7 +35,7 @@ checkPal2 [] = putStrLn ("That's an Empty String.. but okay it's the same forwar
 checkPal2 x | y /= rev  = putStrLn (x ++ " is not a palindrome")
            | otherwise = putStrLn (x ++ " is a palindrome")
             where 
-             y   = map toLower x
+             y   = map toLower $ words2 x
              rev = reverse y
 
 -}
